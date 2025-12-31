@@ -30,11 +30,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp ESC           &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                         &kp N6  &kp N7    &kp N8     &kp N9   &kp N0    &kp GRAVE
-&kp TAB           &kp Q   &kp W   &kp E     &kp R     &kp T                          &kp Y   &kp U     &kp I      &kp O    &kp P     &kp PIPE
-&kp LEFT_SHIFT    &kp A   &kp S   &kp D     &kp F     &kp G                          &kp H   &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LEFT_CONTROL  &kp Z   &kp X   &kp C     &kp V     &kp B   &kp LBKT     &kp RBKT  &kp N   &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                                  &kp LALT  &kp LGUI  &to 1   &kp SPACE    &kp RET   &to 3   &kp BSPC  &kp RGUI
+&kp ESC           &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                                                   &kp N6        &kp N7      &kp N8       &kp N9      &kp N0    &kp GRAVE
+&kp TAB           &kp Q   &kp W   &kp E     &kp R     &kp T                                                    &kp Y         &kp U       &kp I        &kp O       &kp P     &kp PIPE
+&kp LEFT_SHIFT    &kp A   &kp S   &kp D     &kp F     &kp G                                                    &mt H RSHIFT  &mt J RALT  &mt K RCTRL  &mt L RGUI  &kp SEMI  &kp SQT
+&kp LEFT_CONTROL  &kp Z   &kp X   &kp C     &kp V     &kp B   &mt CAPSLOCK LBKT    &mt CAPSLOCK RIGHT_BRACKET  &kp N         &kp M       &kp COMMA    &kp DOT     &kp FSLH  &kp RSHFT
+                                  &kp LALT  &kp LGUI  &to 1   &kp SPACE            &kp RET                     &to 3         &kp BSPC    &kp RGUI
             >;
         };
 
@@ -49,11 +49,11 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&kp F1     &kp F2    &kp F3  &kp F4    &kp F5      &kp F6                                                    &kp F7     &kp F8     &kp F9        &kp F10    &kp F11    &kp F12
-&sk GRAVE  &sk N1    &sk N2  &sk N3    &sk N4      &sk N5                                                    &sk N6     &sk N7     &sk N8        &sk N9     &sk N0     &kp HOME
-&kp GRAVE  &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PRCNT                                                 &kp CARET  &kp AMPS   &kp ASTRK     &kp LPAR   &kp RPAR   &kp END
-&trans     &trans    &trans  &trans    &trans      &trans     &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp PLUS   &kp MINUS  &kp ASTERISK  &kp SLASH  &kp PG_UP  &kp PAGE_DOWN
-                             &trans    &trans      &to 2      &trans                  &trans                 &to 0      &trans     &trans
+&kp F1     &kp F2           &kp F3  &kp F4     &kp F5      &kp F6                                                      &kp F7     &kp F8         &kp F9        &kp F10               &kp F11                &kp F12
+&sk GRAVE  &kp EXCLAMATION  &kp AT  &kp POUND  &kp DOLLAR  &kp PERCENT                                                 &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp HOME
+&trans     &trans           &trans  &trans     &trans      &trans                                                      &trans     &trans         &trans        &trans                &trans                 &kp END
+&trans     &trans           &trans  &trans     &trans      &trans       &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp PLUS   &kp MINUS      &kp ASTERISK  &kp SLASH             &kp PG_UP              &kp PAGE_DOWN
+                                    &trans     &trans      &to 2        &trans                  &trans                 &to 0      &trans         &trans
             >;
         };
 
@@ -92,16 +92,6 @@
 &trans          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans        &msc SCRL_DOWN                          &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
 &trans          &trans          &trans          &trans           &trans        &msc SCRL_UP    &mkp LCLK    &mkp RCLK  &msc SCRL_UP    &trans          &trans          &trans           &trans  &trans
                                                 &trans           &trans        &to 0           &trans       &mkp LCLK  &to 2           &mkp RCLK       &trans
-            >;
-        };
-
-        layer_4 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
         };
     };
