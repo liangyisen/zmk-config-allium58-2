@@ -33,8 +33,8 @@
 &kp ESC           &kp N1  &kp N2  &kp N3    &kp N4    &kp N5                                                   &kp N6        &kp N7      &kp N8       &kp N9      &kp N0    &kp GRAVE
 &kp TAB           &kp Q   &kp W   &kp E     &kp R     &kp T                                                    &kp Y         &kp U       &kp I        &kp O       &kp P     &kp PIPE
 &kp LEFT_SHIFT    &kp A   &kp S   &kp D     &kp F     &kp G                                                    &mt H RSHIFT  &mt J RALT  &mt K RCTRL  &mt L RGUI  &kp SEMI  &kp SQT
-&kp LEFT_CONTROL  &kp Z   &kp X   &kp C     &kp V     &kp B   &mt CAPSLOCK LBKT    &mt CAPSLOCK RIGHT_BRACKET  &kp N         &kp M       &kp COMMA    &kp DOT     &kp FSLH  &kp RSHFT
-                                  &kp LALT  &kp LGUI  &to 1   &kp SPACE            &kp RET                     &to 3         &kp BSPC    &kp RGUI
+&kp LEFT_CONTROL  &kp Z   &kp X   &kp C     &kp V     &kp B   &mt CAPSLOCK LC(LEFT)    &mt CAPSLOCK RC(RIGHT)  &kp N         &kp M       &kp COMMA    &kp DOT     &kp FSLH  &kp RSHFT
+                                  &kp LALT  &kp LGUI  &to 1   &kp SPACE                &kp RET                 &to 3         &kp BSPC    &kp RGUI
             >;
         };
 
