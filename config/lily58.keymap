@@ -87,21 +87,14 @@
             //                     |          |  TO 0  |        |   LCLK |  TO 2  |   RCLK |
 
             bindings = <
-&trans  &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4                            &trans          &trans          &trans          &trans           &trans  &trans
-&trans  &trans          &mmv MOVE_UP    &trans           &trans        &trans                                  &trans          &trans          &mmv MOVE_UP    &trans           &trans  &trans
-&trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans        &msc SCRL_DOWN                          &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
-&trans  &trans          &trans          &trans           &trans        &msc SCRL_UP    &mkp LCLK    &mkp RCLK  &msc SCRL_UP    &trans          &trans          &trans           &trans  &trans
-                                        &trans           &trans        &to 0           &trans       &mkp LCLK  &to 3           &mkp RCLK       &trans
+&trans  &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4                         &trans          &trans          &trans          &trans           &trans  &trans
+&trans  &trans          &mmv MOVE_UP    &trans           &trans        &trans                               &trans          &trans          &mmv MOVE_UP    &trans           &trans  &trans
+&trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans        &msc SCRL_DOWN                       &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
+&trans  &trans          &trans          &trans           &trans        &msc SCRL_UP    &trans    &trans     &msc SCRL_UP    &trans          &trans          &trans           &trans  &trans
+                                        &trans           &trans        &to 0           &trans    &mkp LCLK  &to 3           &mkp RCLK       &trans
             >;
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        to3 {
-            if-layers = <0>;
-            then-layer = <3>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
