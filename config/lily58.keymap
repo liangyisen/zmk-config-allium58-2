@@ -15,6 +15,17 @@
 #define adjust_layer 3
 #define extra 4
 
+
+/ {
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
+    };
+};
+
 / {
     keymap {
         compatible = "zmk,keymap";
