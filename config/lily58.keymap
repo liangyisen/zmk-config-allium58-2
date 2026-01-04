@@ -34,6 +34,16 @@
             bindings = <&kp GRAVE>;
             key-positions = <0 1>;
         };
+
+        left_brackets {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <9 10>;
+        };
+
+        right_brackets {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <10 11>;
+        };
     };
 
     behaviors {
