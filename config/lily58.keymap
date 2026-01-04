@@ -27,6 +27,15 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        combos_dot {
+            bindings = <&kp GRAVE>;
+            key-positions = <0 1>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
