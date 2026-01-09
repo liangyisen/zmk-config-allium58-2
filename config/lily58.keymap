@@ -108,6 +108,8 @@
 &kp LEFT_CONTROL     &kp Z        &kp X       &kp C       &kp V        &kp B                    &mt CAPSLOCK LC(LEFT)    &mt CAPSLOCK RC(RIGHT)  &kp N                    &kp M        &kp COMMA   &kp DOT     &kp FSLH        &kp RSHFT
                                               &kp LALT    &kp LGUI     &to_layer_2_binding 1 1  &kp SPACE                &kp SPACE               &to_layer_2_binding 2 2  &kp RGUI     &kp RALT
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         function_navigation {
