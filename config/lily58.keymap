@@ -109,7 +109,7 @@
                                               &kp LALT    &kp LGUI     &to_layer_2_binding 1 1  &kp SPACE                &kp SPACE               &to_layer_2_binding 2 2  &kp RGUI     &kp RALT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>, <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         function_navigation {
