@@ -51,11 +51,13 @@
         big-minus {
             bindings = <&kp UNDERSCORE>;
             key-positions = <9 10>;
+            layers = <0>;
         };
 
         plus {
             bindings = <&kp PLUS>;
             key-positions = <10 11>;
+            layers = <0>;
         };
 
         left_bracket {
@@ -80,7 +82,6 @@
     behaviors {
         to_layer_2_binding: to_layer_2_binding {
             compatible = "zmk,behavior-hold-tap";
-            label = "TO_LAYER_2_BINDING";
             bindings = <&mo>, <&to>;
 
             #binding-cells = <2>;
@@ -112,8 +113,8 @@
             // 传感器绑定：第一个是左编码器，第二个是右编码器
             // 左编码器：音量控制，右编码器：亮度控制
 
-            sensor-bindings =
-                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings = 
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         function_navigation {
@@ -158,5 +159,5 @@
         };
     };
 
-    conditional_layers { compatible = "zmk,conditional-layers"; };
+
 };
