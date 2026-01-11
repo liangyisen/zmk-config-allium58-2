@@ -111,7 +111,10 @@
 
             // 传感器绑定：第一个是左编码器，第二个是右编码器
             // 左编码器：音量控制，右编码器：亮度控制
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>, <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+
+            sensor-bindings =
+                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>,
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         function_navigation {
@@ -131,6 +134,8 @@
 &trans  &trans  &trans  &trans  &trans                &trans             &trans    &trans  &trans          &kp HOME     &kp DELETE  &kp END        &trans    &trans
                         &trans  &trans                &to 0              &trans    &trans  &to 2           &trans       &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp 0 0>;
         };
 
         mouse_layer {
@@ -145,8 +150,8 @@
 
             bindings = <
 &trans  &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2     &bt BT_SEL 3  &bt BT_SEL 4                      &trans          &trans          &trans          &trans           &trans  &kp DEL
-&trans  &trans          &mmv MOVE_UP    &trans           &trans        &msc SCRL_DOWN                    &msc SCRL_DOWN  &mkp LCLK       &mmv MOVE_UP    &trans           &trans  &trans
-&trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans        &msc SCRL_UP                      &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
+&trans  &trans          &mmv MOVE_UP    &trans           &trans        &msc SCRL_DOWN                    &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &trans           &trans  &trans
+&trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans        &msc SCRL_UP                      &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
 &trans  &trans          &trans          &trans           &trans        &trans          &trans    &trans  &trans          &trans          &trans          &trans           &trans  &trans
                                         &trans           &trans        &to 0           &trans    &trans  &to 1           &trans          &trans
             >;
