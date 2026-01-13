@@ -97,8 +97,7 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
-            flavor = "tap-unless-interrupted";
-            hold-while-undecided;
+            flavor = "tap-preferred";
         };
 
         home_row_mod_right: home_row_mod_right {
@@ -110,8 +109,7 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
-            flavor = "tap-unless-interrupted";
-            hold-while-undecided;
+            flavor = "tap-preferred";
         };
     };
 
