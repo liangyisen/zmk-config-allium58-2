@@ -130,7 +130,7 @@
             // 传感器绑定：第一个是左编码器，第二个是右编码器
             // 左编码器：音量控制，右编码器：亮度控制
 
-            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp RC(RIGHT) LC(LEFT_ARROW)>;
         };
 
         function_navigation {
