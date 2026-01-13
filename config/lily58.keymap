@@ -127,11 +127,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp ESC              &kp N1                      &kp N2                     &kp N3                     &kp N4                      &kp N5                                                                          &kp N6                   &kp N7                       &kp N8                      &kp N9                      &kp N0                          &kp BSPC
-&kp TAB              &kp Q                       &kp W                      &kp E                      &kp R                       &kp T                                                                           &kp Y                    &kp U                        &kp I                       &kp O                       &kp P                           &kp PIPE
-&mt LEFT_SHIFT CAPS  &home_row_mod_left LCTRL A  &home_row_mod_left LALT S  &home_row_mod_left LGUI D  &home_row_mod_left LSHFT F  &kp G                                                                           &kp H                    &home_row_mod_right LSHFT J  &home_row_mod_right RGUI K  &home_row_mod_right RALT L  &home_row_mod_right RCTRL SEMI  &kp RET
-&kp LEFT_CONTROL     &kp Z                       &kp X                      &kp C                      &kp V                       &kp B                    &mt CAPSLOCK LC(LEFT)    &mt LC(LEFT_ARROW) RC(RIGHT)  &kp N                    &kp M                        &kp COMMA                   &kp DOT                     &kp FSLH                        &kp RSHFT
-                                                                            &kp LALT                   &kp LGUI                    &to_layer_2_binding 1 1  &kp SPACE                &kp SPACE                     &to_layer_2_binding 2 2  &kp RGUI                     &kp RALT
+&kp ESC              &kp N1                      &kp N2                     &kp N3                     &kp N4                      &kp N5                                                              &kp N6     &kp N7                       &kp N8                      &kp N9                      &kp N0                          &kp BSPC
+&kp TAB              &kp Q                       &kp W                      &kp E                      &kp R                       &kp T                                                               &kp Y      &kp U                        &kp I                       &kp O                       &kp P                           &kp PIPE
+&mt LEFT_SHIFT CAPS  &home_row_mod_left LCTRL A  &home_row_mod_left LALT S  &home_row_mod_left LGUI D  &home_row_mod_left LSHFT F  &kp G                                                               &kp H      &home_row_mod_right LSHFT J  &home_row_mod_right RGUI K  &home_row_mod_right RALT L  &home_row_mod_right RCTRL SEMI  &kp RET
+&kp LEFT_CONTROL     &kp Z                       &kp X                      &kp C                      &kp V                       &kp B      &mt CAPSLOCK LC(LEFT)      &mt LC(LEFT_ARROW) RC(RIGHT)  &kp N      &kp M                        &kp COMMA                   &kp DOT                     &kp FSLH                        &kp RSHFT
+                                                                            &kp LALT                   &kp LGUI                    &kp SPACE  &to_layer_2_binding 1 1    &to_layer_2_binding 2 2       &kp SPACE  &kp RGUI                     &kp RALT
             >;
 
             // 传感器绑定：第一个是左编码器，第二个是右编码器
@@ -155,7 +155,7 @@
 &trans  &none   &none   &none   &none   &kp C_VOLUME_UP                      &msc SCRL_UP    &kp PAGE_UP  &kp UP    &kp PAGE_DOWN  &none          &none
 &trans  &trans  &trans  &trans  &trans  &kp C_VOLUME_DOWN                    &msc SCRL_DOWN  &kp LEFT     &kp DOWN  &kp RIGHT      &kp HOME       &kp PAGE_UP
 &trans  &none   &none   &none   &none   &none              &trans    &trans  &trans          &kp HOME     &none     &kp END        &kp C_AC_SEND  &kp PAGE_DOWN
-                        &trans  &trans  &to 0              &trans    &trans  &to 0           &trans       &trans
+                        &trans  &trans  &trans             &to 0     &to 0   &trans          &trans       &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -176,7 +176,7 @@
 &trans  &trans        &trans        &trans        &trans        &msc SCRL_LEFT                     &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &trans           &trans  &trans
 &trans  &trans        &trans        &trans        &trans        &msc SCRL_RIGHT                    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
 &trans  &trans        &trans        &trans        &trans        &trans           &trans    &trans  &trans          &trans          &trans          &trans           &trans  &trans
-                                    &trans        &trans        &to 0            &trans    &trans  &to 0           &trans          &trans
+                                    &trans        &trans        &trans           &to 0     &to 0   &trans          &trans          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
